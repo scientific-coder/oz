@@ -25,12 +25,7 @@ RUN apt update && apt install -yq \
     curl -o /usr/local/bin/lein https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein && \
     chmod +x /usr/local/bin/lein && \
     lein self-install && \
-    pip install jupyter && \
-    adduser --disabled-password \
-        --gecos "Default user" \
-        --uid ${NB_UID} \
-        --home ${HOME} \
-        ${NB_USER}
+    pip install jupyter
 # from https://mybinder.readthedocs.io/en/latest/tutorials/dockerfile.html
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
