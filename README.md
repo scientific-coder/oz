@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/scientific-coder/oz/master?filepath=examples%2Fclojupyter-example.ipynb)
+
 ![oz](resources/oz/public/oz.svg)
 
 Great and powerful data vizualizationz
